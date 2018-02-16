@@ -2,7 +2,7 @@
 
 CC = gcc
 FLAGS = -Wall -o 
-SRC = main.c sc_memoryInit.c sc_memorySet.c sc_memoryGet.c sc_memorySave.c sc_regInit.c sc_regSet.c sc_regGet.c
+SRC = main.c variables.c sc_memoryInit.c sc_memorySet.c sc_memoryGet.c sc_memorySave.c sc_memoryLoad.c sc_regInit.c sc_regSet.c sc_regGet.c sc_commandEncode.c compare.c sc_commandDecode.c
 OBJ = $(SRC:.c=.o)
 
 all: 
