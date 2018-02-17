@@ -11,7 +11,9 @@ int sc_memorySet(int address,int value)
 	}
 	else
 	{
-		return 1;
+		BIT_SET(flag,1);
+		printf("Выход за границы памяти\n");
+		return 0;
 	}
 	
 }

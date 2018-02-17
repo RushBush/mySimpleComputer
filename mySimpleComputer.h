@@ -14,6 +14,7 @@ extern int Memory[SIZE];
 extern int reg_flags;
 extern const int cmd_num;
 extern const int cmd_arr[];  
+extern int flag;
 
 int sc_memoryInit();
 int sc_memorySet(int address,int value);

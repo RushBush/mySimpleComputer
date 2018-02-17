@@ -9,5 +9,9 @@ int sc_memoryGet(int address,int *value)
 		return 0;
 	}
 	else
-		return -1;
+	{
+		BIT_SET(flag,1);
+		printf("Выход за границы памяти\n");
+		return 0;
+	}
 }

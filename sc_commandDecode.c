@@ -20,7 +20,11 @@ int sc_commandDecode(int value,int *command,int *operand)
 			*operand=temp_oper;
 		}
 		else
-			return -1;
+		{
+			BIT_SET(flag,4);
+			printf("Ошибочная команда\n");
+			return 0;
+		}
 	}
 		return 0;
 }

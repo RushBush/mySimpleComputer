@@ -12,6 +12,10 @@ int sc_commandEncode(int command,int operand,int *value)
 		return 0;
 	}
 	else
-		return -1;
+	{
+		BIT_SET(flag,4);
+		printf("Ошибочная команда\n");
+		return 0;
+	}
 	
 }
