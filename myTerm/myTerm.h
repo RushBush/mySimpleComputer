@@ -5,11 +5,33 @@
 #include <unistd.h>
 #include <sys/ioctl.h>
 
+enum colors
+{
+	DEFAULT,
+	BLACK,
+	RED,
+	GREEN,
+	YELLOW,
+	BLUE,
+	MAGENTA,
+	CYAN,
+	LIGHT_GRAY,
+	DARK_GRAY,
+	LIGHT_RED,
+	LIGHT_GREEN,
+	LIGHT_YELLOW,
+	LIGHT_BLUE,
+	LIGHT_MAGENTA,
+	LIGHT_CYAN,
+	WHITE
+};
+
+
 int mt_clrscr();
 int mt_gotoXY(int x,int y);
 int mt_getscreensize(int *rows,int *cols);
-int mt_setfgcolor();
-int mt_setbgcolor();
+int mt_setfgcolor(enum colors color);
+int mt_setbgcolor(enum colors color);
 
 
 
