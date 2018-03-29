@@ -10,11 +10,6 @@
 #define BIT_UNSET(A,B) (A = ((A) & ~(1 << (B-1))))
 #define BIT_GET(A,B) (((A >> (B-1))& 0x1))
 
-extern int Memory[SIZE];
-extern int reg_flags;
-extern const int cmd_num;
-extern const int cmd_arr[];  
-extern int flag;
 
 int sc_memoryInit();
 int sc_memorySet(int address,int value);

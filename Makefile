@@ -1,8 +1,8 @@
-.PHONY: clean all
+PHONY: clean all
 
 CC = gcc
 FLAGS = -Wall -std=c99 -o 
-SRC = main.c myTerm.c
+SRC = src/myReadkey.h src/myReadkey.c src/main.c
 OBJ = $(SRC:.c=.o)
 
 all: 
