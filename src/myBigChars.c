@@ -77,7 +77,7 @@ int bc_box(int x1, int y1, int x2, int y2)
 	return 0;
 }
 
-int bc_printbigchar(int *big, int x, int y, enum colors fg, enum colors bg)
+int bc_printbigchar(int *big, int x, int y,colors fg,colors bg)
 {
 	int max_x, max_y;
 	int pos, bit;
@@ -111,7 +111,7 @@ int bc_printbigchar(int *big, int x, int y, enum colors fg, enum colors bg)
 	mt_setbgcolor(DEFAULT);
 	return 0;
 }
-
+/*
 int bc_printbigchar(int *big, int x, int y,colors fgcolor, colors bgcolor)
 {
     mt_setfgcolor(fgcolor);
@@ -130,7 +130,7 @@ int bc_printbigchar(int *big, int x, int y,colors fgcolor, colors bgcolor)
 		mt_setfgcolor(DAFAULT);
     }
     return 0;
-}
+}*/
 
 int bc_setbigcharpos(int *big, int x, int y, int value)
 {
